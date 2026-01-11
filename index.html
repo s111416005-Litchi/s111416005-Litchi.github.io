@@ -2,9 +2,21 @@
 <html lang="zh-HANT">
   <head>
     <style>
+      :root{--lychee-1:#ff7aa2;--lychee-2:#ff4d6d;--lychee-3:#fff0f5}
       .interest-title { font-size:1.3em; font-weight:700; color:#b22222; margin-right:6px; vertical-align:middle; }
+      .site-footer{background:linear-gradient(90deg,var(--lychee-3),#fff); padding:1.25em 0; text-align:center; border-radius:0 0 20px 20px; margin-top:20px;}
+      .footer-inner{max-width:980px; margin:0 auto; display:flex; flex-direction:column; gap:8px; align-items:center; padding:0 12px}
+      .social{display:flex; gap:12px}
+      .social-link{display:inline-flex; width:44px; height:44px; border-radius:50%; align-items:center; justify-content:center; color:#fff; text-decoration:none; box-shadow:0 2px 6px rgba(0,0,0,0.12)}
+      .social-link.instagram{background:linear-gradient(135deg,var(--lychee-2),#ff9bb0)}
+      .social-link.gmail{background:linear-gradient(135deg,#d44638,#ff6b6b)}
+      .social-link svg{width:22px; height:22px; display:block; fill:currentColor}
+      .social-link img{width:40px; height:40px; display:block; object-fit:cover; border-radius:6px}
+      .contact{color:#b22222; font-weight:600}
+      @media(min-width:600px){.footer-inner{flex-direction:row; justify-content:space-between; padding:0 20px}}
+      .sr-only{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0}
     </style>
-</head>
+  </head>
   <body>
 <!--網站名稱-->
 <header style="text-align: center; padding: 1.5em 0 0.5em 0; background: #fff0f5; color: #b22222; font-size: 2.2em; font-weight: bold; letter-spacing: 2px; border-radius: 20px 20px 0 0; margin-bottom: 10px;">
@@ -50,9 +62,9 @@
 <main style="background: #fff0f5; border-radius: 20px; width:100%; margin: 20px 0; padding: 2em; box-shadow: 0 2px 8px #b2222240;">
   <section id="education" style="margin-bottom:2em;">
     <h2 style="color:#b22222;">學歷</h2>
+    <img src="https://s111416005-litchi.github.io/images/msy.jpg" alt="資科" style="width:556px; height:300px; object-fit:cover; border-radius:8px; border:2px solid #b22222;">
     <p style="font-size:1.1em;">
-      <img src="https://s111416005-litchi.github.io/images/msy.JPG" alt="資科" style="width:300px; height:300px; object-fit:cover; border-radius:8px; border:2px solid #b22222;">
-      <a href="https://csweb.ntue.edu.tw/" target="_blank" rel="noopener noreferrer">台本教育大學資訊科學系</a>
+      <a href="https://csweb.ntue.edu.tw/" target="_blank" rel="noopener noreferrer">台北教育大學資訊科學系</a>
     </p>
 
   </section>
@@ -85,6 +97,17 @@
 </main>
 
 <!--footer-->
+
+<footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="social" aria-hidden="false">
+        <a class="social-link instagram" href="https://www.instagram.com/litchi_lin6" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <img src="images/ig-footer.jpg" alt="Instagram"> 
+        </a>
+      </div>
+      <div class="contact">IG: litchi_lin6</div>
+    </div>
+</footer>
 
   </body>
 
